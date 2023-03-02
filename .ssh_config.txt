@@ -1,0 +1,7 @@
+Host github.com *github.com
+#    User git
+#    Port 22
+    HostName github.com
+    ServerAliveInterval 120
+    IdentityFile ~/.ssh/github/github
+    ProxyCommand nc -X 5 -x 192.168.1.108:7891 %h %p
